@@ -5,11 +5,10 @@ class Solution(object):
             if i%3==0 and i%5==0:
                 ans.append("FizzBuzz")
             elif i%3==0:
-                 ans.append("Fizz")
+                ans.append("Fizz")
             elif i%5==0:
-               ans.append("Buzz")
+                ans.append("Buzz")
             else:
                 ans.append(str(i))
-        return ans
-
+        return ans   
         
