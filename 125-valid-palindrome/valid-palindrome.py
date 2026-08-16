@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
     def isPalindrome(self, s):
         left=0
         right=len(s)-1
@@ -12,4 +12,4 @@ class Solution:
             left+=1
             right-=1
         return True
-        
+            
