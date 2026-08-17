@@ -5,8 +5,10 @@ class Solution(object):
         result=""
         base=strs[0]
         for i in range(0,len(base)):
-            for word in strs[1:]:
-                if i==len(word) or word[i]!=base[i]:
+            for words in strs[1:]:
+                if i==len(words) or words[i]!=base[i]:
                     return result
-            result+=base[i] 
-        return result
+            result+=base[i]
+        return result 
+
+        
