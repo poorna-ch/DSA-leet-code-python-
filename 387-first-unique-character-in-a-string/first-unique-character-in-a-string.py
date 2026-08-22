@@ -10,3 +10,4 @@ class Solution(object):
             if count[s[i]]==1:
                 return i
         return -1
+        
