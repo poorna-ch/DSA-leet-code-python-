@@ -6,5 +6,4 @@ class Solution(object):
                 return True
             hashset.add(i)
         return False
-
         
