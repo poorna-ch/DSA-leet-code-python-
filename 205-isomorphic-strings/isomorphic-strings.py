@@ -9,11 +9,12 @@ class Solution(object):
                 if map_s_to_t[char_s]!=char_t:
                     return False
             else:
-                map_s_to_t[char_s]=char_t
+                    map_s_to_t[char_s]=char_t
             if char_t in map_t_to_s:
                 if map_t_to_s[char_t]!=char_s:
                     return False
             else:
-                map_t_to_s[char_t]=char_s
+                    map_t_to_s[char_t]=char_s
         return True
-         
+
+        
