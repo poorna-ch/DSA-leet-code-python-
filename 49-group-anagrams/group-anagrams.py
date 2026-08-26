@@ -10,4 +10,3 @@ class Solution(object):
                 anagram_dict[key]=[]
             anagram_dict[key].append(s)
         return anagram_dict.values()
-        
