@@ -2,7 +2,8 @@ class Solution(object):
     def longestConsecutive(self, nums):
         my_set=set()
         for i in range(0,len(nums)):
-           my_set.add(nums[i])
+            my_set.add(nums[i])
+
         longest=0
         for num in my_set:
             if num-1 not in my_set:
@@ -13,3 +14,4 @@ class Solution(object):
                    x+=1
                 longest=max(longest,count)
         return longest
+        
