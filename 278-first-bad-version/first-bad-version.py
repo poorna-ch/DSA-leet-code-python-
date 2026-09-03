@@ -1,8 +1,7 @@
 # The isBadVersion API is already defined for you.
 # @param version, an integer
 # @return a bool
-# def isBadVersion(version)
-
+# def isBadVersion(version):
 
 class Solution(object):
     def firstBadVersion(self, n):
@@ -15,4 +14,3 @@ class Solution(object):
             else:
                 low=mid+1
         return low
-        
