@@ -9,6 +9,4 @@ class Solution(object):
             if key not in anagram_dict:
                 anagram_dict[key]=[]
             anagram_dict[key].append(s)
-        return anagram_dict.values()
-                
-        
+        return anagram_dict.values()  
