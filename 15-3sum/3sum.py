@@ -1,12 +1,11 @@
 class Solution(object):
-
     def threeSum(self, nums):
         nums.sort()
         result = []
 
         for i in range(len(nums) - 2):
 
-            # Skip duplicate values for i
+            # Skip duplicate i
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
@@ -14,6 +13,7 @@ class Solution(object):
             right = len(nums) - 1
 
             while left < right:
+
                 total = nums[i] + nums[left] + nums[right]
 
                 if total == 0:
@@ -22,10 +22,11 @@ class Solution(object):
                     left += 1
                     right -= 1
 
-                    # Skip duplicates
+                    # Skip duplicate left values
                     while left < right and nums[left] == nums[left - 1]:
                         left += 1
 
+                    # Skip duplicate right values
                     while left < right and nums[right] == nums[right + 1]:
                         right -= 1
 
