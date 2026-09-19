@@ -12,3 +12,4 @@ class Solution(object):
         if min_length==float("inf"):
             return 0
         return min_length
+                    
